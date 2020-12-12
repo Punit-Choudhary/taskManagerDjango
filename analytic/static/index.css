@@ -1,0 +1,79 @@
+.left {
+    width: 50%;
+}
+
+.current {
+    padding: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+p {
+    color: darkmagenta;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h3 {
+    color: indigo;
+}
+
+.overall {
+    display: flex;
+    flex-direction: row;
+}
+
+.remain {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    justify-content: space-between;
+}
+
+.task_c {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    justify-content: space-between;
+}
+
+.get_r {
+    margin-top: 30px;
+    padding: 10px;
+    height: 500px;
+    overflow: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+.right {
+    width: 47%;
+    margin-left: 3%;
+    height: 500px;
+    overflow: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+@media screen and (max-width: 980px) {
+    .overall {
+        flex-direction: column;
+        margin: 15px;
+    }
+    .right {
+        width: 100%;
+        margin-top: 30px;
+        margin-left: 0px;
+        padding: 10px;
+    }
+    .left {
+        width: 100%;
+    }
+    .remain {
+        flex-direction: column;
+    }
+    .task_c {
+        flex-direction: column;
+        padding: 10px;
+    }
+}
